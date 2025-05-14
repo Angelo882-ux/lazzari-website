@@ -1,0 +1,167 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #111;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #f00;
+  margin-top: 20px;
+}
+
+#game {
+  margin: 20px auto;
+  width: 600px;
+  height: 400px;
+  background-color: #222;
+  position: relative;
+  border: 3px solid #fff;
+  overflow: hidden;
+}
+
+#player {
+  width: 20px;
+  height: 20px;
+  background-color: #3498db;
+  position: absolute;
+  top: 190px;
+  left: 290px;
+  border-radius: 3px;
+}
+
+.wall {
+  width: 100px;
+  height: 20px;
+  background-color: red;
+  position: absolute;
+  animation: moveWall 2s linear infinite;
+}
+
+#message {
+  font-size: 24px;
+  margin-top: 20px;
+  color: yellow;
+}
+
+/* Muri con movimento variabile */
+#wall1 {
+  top: 50px;
+  left: 0;
+  animation: wall1move 2s linear infinite;
+}
+
+#wall2 {
+  top: 150px;
+  left: 600px;
+  animation: wall2move 1.5s linear infinite;
+}
+
+#wall3 {
+  top: 300px;
+  left: 0;
+  animation: wall3move 1s linear infinite;
+}
+
+/* Animazioni */
+@keyframes wall1move {
+  0% { left: 0; }
+  50% { left: 500px; }
+  150% { left: 0; }
+}
+
+@keyframes wall2move {
+  0% { left: 600px; }
+  50% { left: 0; }
+  150% { left: 600px; }
+}
+
+@keyframes wall3move {
+  0% { left: 0; }
+  50% { left: 400px; }
+  150% { left: 0; }
+}
+
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #0077cc, #5f4b8b); /* Gradiente blu-viola */
+  background-size: 400% 400%;
+  animation: sfondoAnimato 10s ease infinite; /* Animazione di transizione */
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* Animazione per cambiare gradiente nel tempo */
+@keyframes sfondoAnimato {
+  0% {
+    background: linear-gradient(to right, #0077cc, #5f4b8b);
+  }
+  50% {
+    background: linear-gradient(to right, #00b3b3, #8e44ad); /* Gradiente turchese-viola */
+  }
+  100% {
+    background: linear-gradient(to right, #0077cc, #5f4b8b);
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #333;
+}
+
+input[type="number"] {
+  padding: 10px;
+  font-size: 16px;
+  width: 100px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+p {
+  font-size: 18px;
+  color: #333;
+  margin-top: 20px;
+}
+
+#risultato {
+  font-size: 20px;
+  font-weight: bold;
+  color: #d9534f;
+}
+
+#reset {
+  margin-top: 20px;
+  background-color: #5bc0de;
+}
+
+#reset:hover {
+  background-color: #31b0d5;
+}
